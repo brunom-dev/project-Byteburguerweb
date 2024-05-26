@@ -6,9 +6,6 @@ module.exports = {
         'sans': ['Inter', 'sans-serif']
     },
     extend: {
-        backgroundImage: {
-            "home": "url('/assets/images/background/background.jpg')"
-        }
     },
   },
   plugins: [],
