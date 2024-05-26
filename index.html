@@ -40,29 +40,33 @@
         </div>
     </header>
 
-    <h2 class="text-2xl md:text-4xl font-bold text-center mt-9 mb-6">
-        Conheça nosso menu
+    <h2 class="text-2xl md:text-4xl font-bold text-center mt-9 mb-9">
+        Conheça nosso <span class="text-red-500">cárdapio</span>
     </h2>
 
-    <div id="menu">
-        <main class="grid grid-cols-1 md:grid-cols-2 md:gap-10 gap-7 mx-auto max-w-7xl px-2 mb-16">
-            <div class="flex gap-2">
+    <main id="menu">
+        <div class="mx-auto max-w-7xl px-2 my-2">
+            <h2 class="font-bold text-3xl">Sanduiches</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 md:gap-10 gap-7 mx-auto max-w-7xl px-2 mb-16">
+            <div class="flex gap-2 mt-2">
                 <img 
-                    src="./assets/hamb-1.png" 
-                    alt="Hamburguer Smash"
+                    src="./assets/images/Sanduiches/Cheeseburger.jpg" 
+                    alt="Cheeseburger"
                     class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" 
                 />
 
-                <div>
-                    <p class="font-bold">Hambuguer Smash</p>
-                    <p class="text-sm">Pão levinho de fermentação natural da Trigou, burguer 160g, queijo prato e maionese da casa.</p>
+                <div class="w-full">
+                    <p class="font-bold  text-lg">Cheeseburger</p>
+                    <p class="text-sm">Hambúrguer suculento com queijo derretido.</p>
                 
                     <div class="flex items-center gap-2 justify-between mt-3">
                         <p class="font-bold text-lg">R$ 18.90</p>
                         <button 
-                            class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                            data-name="Hambuguer Smash"
-                            data-price="18.90"
+                            class="bg-gray-900 hover:bg-red-500 duration-300 px-5 rounded add-to-cart-btn"
+                            data-name="Cheeseburger"
+                            data-price="14.99"
                         >
                             <i class="fa fa-cart-plus text-lg text-white"></i>
                         </button>
@@ -72,21 +76,21 @@
 
             <div class="flex gap-2">
                 <img 
-                    src="./assets/hamb-2.png" 
-                    alt="Hamburguer Duplo"
+                    src="./assets/images/Sanduiches/HamburguerdeFrango.png" 
+                    alt="Hambúrguer de Frango"
                     class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" 
                 />
 
-                <div>
-                    <p class="font-bold">Hamburguer Duplo</p>
-                    <p class="text-sm">Pão levinho de fermentação natural da Trigou, burguer 160g, queijo prato e maionese da casa.</p>
+                <div class="w-full">
+                    <p class="font-bold  text-lg">Hambúrguer de Frango</p>
+                    <p class="text-sm">Filé de frango grelhado com alface e tomate.</p>
                 
                     <div class="flex items-center gap-2 justify-between mt-3">
-                        <p class="font-bold text-lg">R$ 32.90</p>
+                        <p class="font-bold text-lg">R$ 12.99</p>
                         <button 
-                            class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                            data-name="Hambuguer Duplo"
-                            data-price="32.90"
+                            class="bg-gray-900 hover:bg-red-500 duration-300 px-5 rounded add-to-cart-btn"
+                            data-name="Hambúrguer de Frango"
+                            data-price="12.99"
                         >
                             <i class="fa fa-cart-plus text-lg text-white"></i>
                         </button>
@@ -96,21 +100,21 @@
 
             <div class="flex gap-2">
                 <img 
-                    src="./assets/hamb-3.png" 
-                    alt="Hamburguer Salad"
+                    src="./assets/images/Sanduiches/Veggie Burger.jpg" 
+                    alt="Veggie Burger"
                     class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" 
                 />
 
-                <div>
-                    <p class="font-bold">Hamburguer Salad</p>
-                    <p class="text-sm">Pão levinho de fermentação natural da Trigou, burguer 160g, queijo prato e maionese da casa.</p>
+                <div class="w-full">
+                    <p class="font-bold  text-lg">Veggie Burger</p>
+                    <p class="text-sm">Hambúrguer vegetariano com legumes frescos.</p>
                 
                     <div class="flex items-center gap-2 justify-between mt-3">
-                        <p class="font-bold text-lg">R$ 35.90</p>
+                        <p class="font-bold text-lg">R$ 13,99</p>
                         <button 
-                            class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                            data-name="Hambuguer Salad"
-                            data-price="35.90"
+                            class="bg-gray-900 hover:bg-red-500 duration-300 px-5 rounded add-to-cart-btn"
+                            data-name="Veggie Burger"
+                            data-price="13.99"
                         >
                             <i class="fa fa-cart-plus text-lg text-white"></i>
                         </button>
@@ -120,34 +124,82 @@
 
             <div class="flex gap-2">
                 <img 
-                    src="./assets/hamb-4.png" 
-                    alt="Hamburguer Moda da casa"
+                    src="./assets/images/Sanduiches/Bacon Burger.jpg" 
+                    alt="Bacon Burger"
                     class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" 
                 />
 
-                <div>
-                    <p class="font-bold">Hamburguer Moda da casa</p>
-                    <p class="text-sm">Pão levinho de fermentação natural da Trigou, burguer 160g, queijo prato e maionese da casa.</p>
+                <div class="w-full">
+                    <p class="font-bold  text-lg">Bacon Burger</p>
+                    <p class="text-sm">Hambúrguer com bacon crocante e queijo cheddar.</p>
                 
                     <div class="flex items-center gap-2 justify-between mt-3">
-                        <p class="font-bold text-lg">R$ 30.00</p>
+                        <p class="font-bold text-lg">R$ 17,99</p>
                         <button 
-                            class="bg-gray-900 px-5 rounded add-to-cart-btn"
-                            data-name="Hambuguer Moda da casa"
-                            data-price="30.00"
+                            class="bg-gray-900 hover:bg-red-500 duration-300 px-5 rounded add-to-cart-btn"
+                            data-name="Bacon Burger"
+                            data-price="17.99"
                         >
                             <i class="fa fa-cart-plus text-lg text-white"></i>
                         </button>
                     </div>
                 </div>
             </div>
-        </main>
+
+            <div class="flex gap-2">
+                <img 
+                    src="./assets/images/Sanduiches/Fish Burger.jpg" 
+                    alt="Fish Burger"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" 
+                />
+
+                <div class="w-full">
+                    <p class="font-bold  text-lg">Fish Burger</p>
+                    <p class="text-sm">Filé de peixe empanado com molho tártaro.</p>
+                
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 15,99</p>
+                        <button 
+                            class="bg-gray-900 hover:bg-red-500 duration-300 px-5 rounded add-to-cart-btn "
+                            data-name="Fish Burger"
+                            data-price="15.99"
+                        >
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex gap-2">
+                <img 
+                    src="./assets/images/Sanduiches/Double Cheeseburger.jpeg" 
+                    alt="Double Cheeseburger"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" 
+                />
+
+                <div class="w-full">
+                    <p class="font-bold  text-lg">Double Cheeseburger</p>
+                    <p class="text-sm">Dois hambúrgueres com queijo, alface e tomate.</p>
+                
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 19,99</p>
+                        <button 
+                            class="bg-gray-900 hover:bg-red-500 duration-300 px-5 rounded add-to-cart-btn"
+                            data-name="Double Cheeseburger"
+                            data-price="19.99"
+                        >
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="mx-auto max-w-7xl px-2 my-2">
             <h2 class="font-bold text-3xl">Bebidas</h2>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 md:gap-10 gap-7 mx-auto max-w-7xl px-2 mb-16" id="mene-bebidas">
+        <div class="grid grid-cols-1 md:grid-cols-2 md:gap-10 gap-7 mx-auto max-w-7xl px-2 mb-16">
             
             <div class="flex gap-2 w-full mt-2">
                 <img 
@@ -157,11 +209,11 @@
                 />
 
                 <div class="w-full">
-                    <p class="font-bold">Coca Lata</p>
+                    <p class="font-bold  text-lg">Coca Lata</p>
                     <div class="flex items-center gap-2 justify-between mt-3">
                         <p class="font-bold text-lg">R$ 4.49</p>
                         <button 
-                            class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                            class="bg-gray-900 hover:bg-red-500 duration-300 px-5 rounded add-to-cart-btn"
                             data-name="Coca Lata"
                             data-price="4.49"
                         >
@@ -179,11 +231,11 @@
                 />
 
                 <div class="w-full">
-                    <p class="font-bold">Guarana Lata</p>
+                    <p class="font-bold  text-lg">Guarana Lata</p>
                     <div class="flex items-center gap-2 justify-between mt-3">
                         <p class="font-bold text-lg">R$ 4.49</p>
                         <button 
-                            class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                            class="bg-gray-900 hover:bg-red-500 duration-300 px-5 rounded add-to-cart-btn"
                             data-name="Guanara Lata"
                             data-price="4.49"
                         >
@@ -193,7 +245,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </main>
 
     <div class="bg-black/65 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden" id="cart-modal">
         <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
@@ -203,7 +255,7 @@
                 
             </div>
 
-            <p class="font-bold">Total: <span id="cart-total">0.00</span></p>
+            <p class="font-bold  text-lg">Total: <span id="cart-total">0.00</span></p>
             
             <p class="font-bold mt-4">Endereço de entrega</p>
             <input 
