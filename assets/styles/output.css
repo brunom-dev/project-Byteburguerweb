@@ -824,11 +824,6 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-yellow-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(234 179 8 / var(--tw-bg-opacity));
-}
-
 .bg-zinc-900 {
   --tw-bg-opacity: 1;
   background-color: rgb(24 24 27 / var(--tw-bg-opacity));
@@ -969,14 +964,14 @@ html {
   transform: translateX(0px) !important;
 }
 
-@media screen and (max-width: 900px) {
-  #menu li {
+@media screen and (max-width: 1050px) {
+  #menu-desktop li {
     font-size: 20px;
   }
 }
 
-@media screen and (max-width: 800px) {
-  #menu li {
+@media screen and (max-width: 950px) {
+  #menu-desktop li {
     display: none;
   }
 
@@ -1017,6 +1012,11 @@ html {
 
   .md\:gap-10 {
     gap: 2.5rem;
+  }
+
+  .md\:px-9 {
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
   }
 
   .md\:text-4xl {

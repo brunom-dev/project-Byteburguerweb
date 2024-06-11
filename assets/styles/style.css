@@ -22,13 +22,13 @@ html {
     transform: translateX(0px) !important;
 }
 
-@media screen and (max-width: 900px) {
-    #menu li {
+@media screen and (max-width: 1050px) {
+    #menu-desktop li {
         font-size: 20px;
     }
 }
-@media screen and (max-width: 800px) {
-    #menu li {
+@media screen and (max-width: 950px) {
+    #menu-desktop li {
         display: none;
     }
     .mobile-menu-icon {
