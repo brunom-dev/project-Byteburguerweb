@@ -177,10 +177,10 @@ checkoutBtn.addEventListener('click', () => {
 
 {
     if (isOpen) {
-        spanData.classList.remove("bg-red-500");
+        spanData.classList.remove("bg-yellow-500");
             spanData.classList.add("bg-green-500");
         } else {
             spanData.classList.remove("bg-green-500");
-            spanData.classList.add("bg-red-500");
+            spanData.classList.add("bg-yellow-500");
         }
     }

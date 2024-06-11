@@ -17,31 +17,65 @@
 </head>
 <body>
 
-    <header id="#home">
-        <nav class="w-full h-[110px] bg-red-500 flex justify-between items-center px-9">
+    <header id="home" class="relative">
+        <nav class="w-full h-[110px] bg-red-500 flex justify-between items-center px-9 z-[40]">
 
-                <a href="#home">
-                    <img src="./assets/images/header/logo-byte.png" class="h-[115px]" alt="logo byte burguer">
-                </a>
+            <a href="#home">
+                <img src="./assets/images/header/logo-byte.png" class="h-[115px]" alt="logo byte burguer">
+            </a>
 
-            <ul class="flex gap-[20px] items-center" id="menu">
+            <ul class="flex gap-[30px] items-center" id="menu">
                 <li class="text-2xl text-white font-medium hover:text-yellow-400 cursor-pointer">
-                    Home
+                    <a href="#home">Home</a>
                 </li>
                 <li class="text-2xl text-white font-medium hover:text-yellow-400 cursor-pointer">
-                    Sanduiches
+                    <a href="#Sanduiches">Sanduiches</a>
                 </li>
                 <li class="text-2xl text-white font-medium hover:text-yellow-400 cursor-pointer">
-                    Pizzas
+                    <a href="#Pizzas">Pizzas</a>
                 </li>
                 <li class="text-2xl text-white font-medium hover:text-yellow-400 cursor-pointer">
-                    Bebidas
+                    <a href="#Bebidas">Bebidas</a>
                 </li>
                 <li class="text-2xl text-white font-medium hover:text-yellow-400 cursor-pointer">
-                    Sobremesas
+                    <a href="#Sobremesas">Sobremesas</a>
+                </li>
+                <li class="text-2xl text-white font-medium hover:text-yellow-400 cursor-pointer">
+                    <a href="#Contato">Contato</a>
                 </li>
             </ul>
+
+            <div class="mobile-menu-icon">
+                <button onClick="menuShow()"><img src="assets/images/menu-mobile/button_mobile.svg" alt="" class="icone-menu-mobile h-[50px] mr-5"></button>
+            </div>
         </nav>  
+
+        <nav id="mobile-nav" class="absolute z-[30] w-full">
+            <ul id="mobile-menu" class="bg-red-500 text-center">
+                <li class="text-2xl text-white font-medium hover:text-yellow-400 cursor-pointer">
+                    Inicio
+                </li>
+                <li class="text-2xl text-white font-medium hover:text-yellow-400 cursor-pointer mt-4">
+                    Sanduiches
+                </li>
+                <li class="text-2xl text-white font-medium hover:text-yellow-400 cursor-pointer mt-4">
+                    Pizzas
+                </li>
+                <li class="text-2xl text-white font-medium hover:text-yellow-400 cursor-pointer mt-4">
+                    Bebidas
+                </li>
+                <li class="text-2xl text-white font-medium hover:text-yellow-400 cursor-pointer mt-4">
+                    Sobremesas
+                </li>
+                <li class="text-2xl text-white font-medium hover:text-yellow-400 cursor-pointer mt-4">
+                    Contato
+                </li>
+            </ul>
+        </nav>
+
+
+
+
 
         <div class="relative w-full h-[420px] bg-zinc-900 bg-center bg-cover" style="background-image: url('/assets/images/background/background.jpg');">
             <div class="absolute inset-0 z-0 bg-black bg-opacity-40"></div>
@@ -75,7 +109,7 @@
 
     <main id="menu">
         <div class="mx-auto max-w-7xl px-2 my-3">
-            <h2 class="font-bold text-3xl">Sanduiches</h2>
+            <h2 class="font-bold text-3xl" id="Sanduiches">Sanduiches</h2>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 md:gap-10 gap-7 mx-auto max-w-7xl px-2 mb-16">
             <div class="flex gap-2 mt-2">
@@ -92,7 +126,7 @@
                     <div class="flex items-center gap-2 justify-between mt-3">
                         <p class="font-bold text-lg">R$ 18.90</p>
                         <button 
-                            class="bg-gray-900 hover:bg-red-500 duration-300 px-5 rounded add-to-cart-btn"
+                            class="bg-gray-900 hover:bg-yellow-400 duration-300 px-5 rounded add-to-cart-btn"
                             data-name="Cheeseburger"
                             data-price="14.99"
                         >
@@ -116,7 +150,7 @@
                     <div class="flex items-center gap-2 justify-between mt-3">
                         <p class="font-bold text-lg">R$ 12.99</p>
                         <button 
-                            class="bg-gray-900 hover:bg-red-500 duration-300 px-5 rounded add-to-cart-btn"
+                            class="bg-gray-900 hover:bg-yellow-400 duration-300 px-5 rounded add-to-cart-btn"
                             data-name="Hambúrguer de Frango"
                             data-price="12.99"
                         >
@@ -140,7 +174,7 @@
                     <div class="flex items-center gap-2 justify-between mt-3">
                         <p class="font-bold text-lg">R$ 13,99</p>
                         <button 
-                            class="bg-gray-900 hover:bg-red-500 duration-300 px-5 rounded add-to-cart-btn"
+                            class="bg-gray-900 hover:bg-yellow-400 duration-300 px-5 rounded add-to-cart-btn"
                             data-name="Veggie Burger"
                             data-price="13.99"
                         >
@@ -164,7 +198,7 @@
                     <div class="flex items-center gap-2 justify-between mt-3">
                         <p class="font-bold text-lg">R$ 17,99</p>
                         <button 
-                            class="bg-gray-900 hover:bg-red-500 duration-300 px-5 rounded add-to-cart-btn"
+                            class="bg-gray-900 hover:bg-yellow-400 duration-300 px-5 rounded add-to-cart-btn"
                             data-name="Bacon Burger"
                             data-price="17.99"
                         >
@@ -188,7 +222,7 @@
                     <div class="flex items-center gap-2 justify-between mt-3">
                         <p class="font-bold text-lg">R$ 15,99</p>
                         <button 
-                            class="bg-gray-900 hover:bg-red-500 duration-300 px-5 rounded add-to-cart-btn "
+                            class="bg-gray-900 hover:bg-yellow-400 duration-300 px-5 rounded add-to-cart-btn "
                             data-name="Fish Burger"
                             data-price="15.99"
                         >
@@ -212,7 +246,7 @@
                     <div class="flex items-center gap-2 justify-between mt-3">
                         <p class="font-bold text-lg">R$ 19,99</p>
                         <button 
-                            class="bg-gray-900 hover:bg-red-500 duration-300 px-5 rounded add-to-cart-btn"
+                            class="bg-gray-900 hover:bg-yellow-400 duration-300 px-5 rounded add-to-cart-btn"
                             data-name="Double Cheeseburger"
                             data-price="19.99"
                         >
@@ -224,7 +258,7 @@
         </div>
 
         <div class="mx-auto max-w-7xl px-2 my-3">
-            <h2 class="font-bold text-3xl">Bebidas</h2>
+            <h2 class="font-bold text-3xl" id="Bebidas">Bebidas</h2>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 md:gap-10 gap-5 mx-auto max-w-7xl px-2 mb-20">
             
@@ -240,7 +274,7 @@
                     <div class="flex items-center gap-2 justify-between mt-3">
                         <p class="font-bold text-lg">R$ 4.49</p>
                         <button 
-                            class="bg-gray-900 hover:bg-red-500 duration-300 px-5 rounded add-to-cart-btn"
+                            class="bg-gray-900 hover:bg-yellow-400 duration-300 px-5 rounded add-to-cart-btn"
                             data-name="Cajuina Lata"
                             data-price="4.49"
                         >
@@ -262,7 +296,7 @@
                     <div class="flex items-center gap-2 justify-between mt-3">
                         <p class="font-bold text-lg">R$ 4.49</p>
                         <button 
-                            class="bg-gray-900 hover:bg-red-500 duration-300 px-5 rounded add-to-cart-btn"
+                            class="bg-gray-900 hover:bg-yellow-400 duration-300 px-5 rounded add-to-cart-btn"
                             data-name="Fanta Laranja Lata"
                             data-price="4.49"
                         >
@@ -284,7 +318,7 @@
                     <div class="flex items-center gap-2 justify-between mt-3">
                         <p class="font-bold text-lg">R$ 5.49</p>
                         <button 
-                            class="bg-gray-900 hover:bg-red-500 duration-300 px-5 rounded add-to-cart-btn"
+                            class="bg-gray-900 hover:bg-yellow-400 duration-300 px-5 rounded add-to-cart-btn"
                             data-name="Suco Natural Goiaba"
                             data-price="5.49"
                         >
@@ -306,7 +340,7 @@
                     <div class="flex items-center gap-2 justify-between mt-3">
                         <p class="font-bold text-lg">R$ 5.49</p>
                         <button 
-                            class="bg-gray-900 hover:bg-red-500 duration-300 px-5 rounded add-to-cart-btn"
+                            class="bg-gray-900 hover:bg-yellow-400 duration-300 px-5 rounded add-to-cart-btn"
                             data-name="Suco Natural Maracuja"
                             data-price="5.49"
                         >
@@ -357,5 +391,6 @@
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/mobile.js"></script>
 </body>
 </html>

@@ -1,3 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 30px;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+#mobile-menu {
+    transition: 0.5s;
+    transform: translateX(-100vw);
+    padding: 40px 0;
+}
+
+.open {
+    transform: translateX(0px) !important;
+}
+
+@media screen and (max-width: 900px) {
+    #menu li {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 800px) {
+    #menu li {
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+    }
+
+}
