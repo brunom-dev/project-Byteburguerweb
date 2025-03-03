@@ -163,8 +163,8 @@ checkoutBtn.addEventListener('click', () => {
     }
 
 
-    const cartItems = "Boa noite\n\n";
-    cartItems = cart.map((item) => {
+    let cartItems = "Boa noite\n\n";
+    cartItems += cart.map((item) => {
         return (
             `*${item.name}*\n\tQuantidade: *(${item.quantity})*\n\tPreço: *R$ ${item.price}*\n\tSubtotal: *R$ ${item.quantity * item.price}*`
         )
