@@ -110,7 +110,8 @@ const removeItemCart = (itemName) => {
 const checkRestaurantIsOpen = () => {
     const data = new Date();
     const hora = data.getHours();
-    return hora >= 18 && hora < 22 ;
+    return hora >= 1
+        8 && hora < 22 ;
 }
 const isOpen = checkRestaurantIsOpen();
 
