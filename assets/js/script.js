@@ -164,11 +164,10 @@ checkoutBtn.addEventListener('click', () => {
 
     const cartItems = cart.map((item) => {
         return (
-            `*${item.name}*\n\tQuantidade: *(${item.quantity})*\n\tPreço: *R$ ${item.price}*\n\tSubtotal: *R$ ${item.qtd * item.price}*`
+            `*${item.name}*\n\tQuantidade: *(${item.quantity})*\n\tPreço: *R$ ${item.price}*\n\tSubtotal: *R$ ${item.quantity * item.price}*`
         )
     }).join("\n\n");
     
-    cartItems += `\n\n *Total: R$ ${cart.totalCart}*`
     const mensagge = encodeURIComponent(cartItems);
     const phone = 5588988337938;
     window.open(`https://wa.me/${phone}?text=${mensagge} %0A%0A*Endereço: ${addressInput.value}*`, "_blank")
